@@ -6,7 +6,7 @@ function toogleInputFeild(elementId) {
 
 // this function will enable the checkbox system and will allow user to set different input
 
-function checkTheValue (box1,box2,input1,input2,checkId ) {
+function checkTheValue (box1,box2,input1,input2,checkId,inputContainer ) {
     const firstTextCase = document.getElementById(box1);
     const secondTextCase = document.getElementById(box2);
     const firstInputValueString = getInputValueById(input1);
@@ -34,7 +34,7 @@ function checkTheValue (box1,box2,input1,input2,checkId ) {
     else{
         firstTextCase.innerText = firstInputValue;
         secondTextCase.innerText = secondInputValue;
-        document.getElementById(checkId).checked = true;
+        document.getElementById(inputContainer).classList.toggle('hidden');
     }
 }
 
