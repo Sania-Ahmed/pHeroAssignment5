@@ -39,10 +39,10 @@ function getTextById(elementId) {
 // this function will calculate area 
 
 function calculateArea(formulaNum, base, height) {
-    base = parseFloat(getTextById(base));
-    height = parseFloat(getTextById(height));
+    base = parseFloat(getInputValueById(base));
+    height = parseFloat(getInputValueById(height));
     const area = parseFloat((formulaNum * base * height).toFixed(2));
-    if(isNaN(area) || base < 0 || base < 0){
+    if(isNaN(area) || base < 0 || height < 0 || typeof(base)!=='number' || typeof(base)!=='number' ){
         alert('please input valid numbers only')
         return;
     }
