@@ -74,12 +74,12 @@ function displayArea(title, area) {
     title = getTextById(title);
     serial += 1;
     const row = document.createElement('tr');
-    row.classList.add('flex', 'items-center', 'justify-between', 'gap-2', 'mt-3');
+    row.classList.add('flex', 'items-center', 'justify-between', 'gap-2', 'mt-3', 'w-full');
     row.innerHTML = `
-    <td class="p-1 m-1 text-center ">${serial}</td>
-    <td class="p-1 m-1 text-center ">${title}</td>
-    <td class="p-1 m-1 text-center area" >${area}cm<sup>2</sup></td>
-    <button class="px-2 py-1 text-center bg-sky-400 text-white rounded convertors">convert to m<sup>2</sup></button>
+    <td class="p-1 m-1 md:m-0 text-center ">${serial}</td>
+    <td class="p-1 m-1 md:m-0 text-center ">${title}</td>
+    <td class="p-1 m-1 md:m-0 text-center area" >${area}cm<sup>2</sup></td>
+    <button class="px-1 py-1 text-center bg-sky-400 text-white rounded convertors"> m<sup>2</sup></button>
       `
     container.appendChild(row);
     const convertors = document.querySelectorAll('.convertors');
@@ -95,8 +95,8 @@ function displayArea(title, area) {
         })
     }
     const delBtn = document.createElement('button');
-    delBtn.innerHTML= 'Delete'
-   delBtn.classList.add('px-2','py-1','bg-red-500', 'rounded', 'text-center');
+    delBtn.innerHTML= 'Del'
+   delBtn.classList.add('px-2','py-1','bg-red-500', 'rounded', 'text-center', 'md:p-0', 'md:m-0', 'md:px-[2px]');
     row.appendChild(delBtn);
     delBtn.style.display= 'none';
     delBtn.addEventListener('click', function(event){
