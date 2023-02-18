@@ -161,38 +161,42 @@
                     </div>
                     <div class="text-center mt-3">
                         <div>
-                            <h2 class="font-bold">Rhombus</h2>
+                            <h2 class="font-bold">
+                               <span id="rhombus-title">Rhombus</span></h2>
                             <h3 class="font-semibold">Area(A)= 0.5* d <sub>1</sub> * d <sub>2</sub></h3>
                         </div>
                         <div class="flex items-center justify-center gap-1 mt-3 mb-2 p-1">
                             <div>
-                                <h4 class="inline-block">d <sub>1</sub>= 16cm</h4>
-                                <h4 class="inline-block">d <sub>2</sub>= 8cm</h4>
+                                <h4 class="inline-block">d <sub>1</sub>= <span id="rhombus-first-current-value">16</span>cm</h4>
+                                <h4 class="inline-block">d <sub>2</sub>= <span id="rhombus-second-current-value">8</span>cm</h4>
                             </div>
                             <div>
-                                <img src="./images/edit-icon.png" alt="">
+                                <img src="./images/edit-icon.png" alt="" id="rhombus-edit-btn">
                             </div>
                         </div>
                     </div>
+                    <div id="rhombus-input-container"
+                    class="hidden">
                     <div class="flex items-center justify-center w-full">
                         <div class="p-1">
-                            <input type="text" name="" id="" class="w-14 border rounded px-1 text-center"
+                            <input type="text" name="" id="rhombus-first-new-value" class="w-14 border rounded px-1 text-center"
                                 placeholder="d1 ">
 
                         </div>
                         <p class="pr-1">cm</p>
                         <div>
-                            <input type="text" name="" id="" class="w-14 border rounded px-1 text-center"
+                            <input type="text" name="" id="rhombus-second-new-value"  class="w-14 border rounded px-1 text-center"
                                 placeholder="d2">
 
                         </div>
                         <p class="pr-1">cm</p>
                         <div class="ml-2">
-                            <input type="checkbox" name="" id="" class="w-5 h-5">
+                            <input type="checkbox" name=""  class="w-5 h-5" id="rhombus-checkbox">
                         </div>
 
                     </div>
-                    <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded">Calculate</button>
+                </div>
+                    <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded" id="rhombus-calculate-area-btn">Calculate</button>
                 </div>
                 <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card">
                     <div class="w-full">
@@ -291,6 +295,7 @@
     <script src="./js/triagle.js"></script>
     <script src="./js/ractangle.js"></script>
     <script src="./js/parallelogram.js"></script>
+    <script src="./js/rhombus.js"></script>
 </body>
 
 </html>
