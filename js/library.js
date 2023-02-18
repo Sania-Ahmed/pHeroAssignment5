@@ -9,10 +9,25 @@ function toogleInputFeild(elementId) {
 function checkTheValue (box1,box2,input1,input2,checkId ) {
     const firstTextCase = document.getElementById(box1);
     const secondTextCase = document.getElementById(box2);
-    const firstInputValue = getInputValueById(input1);
-    const secondInputValue = getInputValueById(input2);
+    const firstInputValueString = getInputValueById(input1);
+    const firstInputValue =parseFloat(firstInputValueString);
+    const secondInputValueString = getInputValueById(input2);
+    const secondInputValue =parseFloat(secondInputValueString);
     if (firstInputValue === '' || secondInputValue === '') {
         alert('input feild can not be empty');
+        document.getElementById(checkId).checked = false;
+    }
+    else if(typeof(firstInputValue)!=='number' || typeof(secondInputValue)!=='number' || isNaN(firstInputValue) || isNaN(secondInputValue)) { 
+        alert('please try to set a number');
+        document.getElementById(input1).value= '';
+        document.getElementById(input2).value= '';
+        document.getElementById(checkId).checked = false;
+
+    }
+    else if(firstInputValue < 0 || secondInputValue < 0) {
+        alert('please input positive numbers only')
+        document.getElementById(input1).value= '';
+        document.getElementById(input2).value= '';
         document.getElementById(checkId).checked = false;
     }
     else{
