@@ -35,7 +35,6 @@ function checkTheValue (box1,box2,input1,input2,checkId ) {
         secondTextCase.innerText = secondInputValue;
         document.getElementById(checkId).checked = true;
     }
-    
 }
 
 //  this function will get input value from any input feild 
