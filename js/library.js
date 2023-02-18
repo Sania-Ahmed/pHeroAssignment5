@@ -30,6 +30,7 @@ function checkTheValue (box1,box2,input1,input2,checkId ) {
         document.getElementById(input2).value= '';
         document.getElementById(checkId).checked = false;
     }
+
     else{
         firstTextCase.innerText = firstInputValue;
         secondTextCase.innerText = secondInputValue;
@@ -78,7 +79,7 @@ function displayArea(title, area) {
     <td class="p-1 m-1 text-center ">${serial}</td>
     <td class="p-1 m-1 text-center ">${title}</td>
     <td class="p-1 m-1 text-center area" >${area}cm<sup>2</sup></td>
-    <button class="px-2 py-1 text-center bg-sky-400 text-white rounded convertors"> convert to meter </button>
+    <button class="px-2 py-1 text-center bg-sky-400 text-white rounded convertors">convert to m<sup>2</sup></button>
       `
     container.appendChild(row);
     const convertors = document.querySelectorAll('.convertors');

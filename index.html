@@ -12,27 +12,27 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="bg-slate-800">
     <!-- header starting here -->
     <header>
         <!-- adding the nav menu here  -->
-        <nav class="w-[95%] mx-auto lg:container mt-5">
+        <nav class="w-[95%] mx-auto lg:container pt-5">
             <div class="navbar bg-base-100 bg-sky-200 rounded-lg p-2">
                 <div class="navbar-start">
                     <a class="normal-case text-xl">Math-ginius</a>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-sky-500 border border-sky-500 ">Blog</a>
+                    <button onclick="moveToBLogs()" class="bg-sky-400 text-white p-2 text-center font-bold rounded w-16">Blog</button>
                 </div>
             </div>
         </nav>
     </header>
     <!-- main section starts here  -->
     <main>
-        <section class="grid md:grid-cols-6 lg:grid-cols-6 gap-1 w-[95%]  mx-auto mt-5 lg:container ">
+        <section class="grid md:grid-cols-6 lg:grid-cols-6 gap-2 w-[95%]  mx-auto mt-5 lg:container ">
             <div
-                class="grid sm:grid-cols-1 md:grid-cols-2 md:col-span-4 lg:grid-cols-3 lg:col-span-4 lg:gap-4 md:gap-3 mt-10 mx-auto">
-                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded  lg:mb-2 math-card">
+                class="grid sm:grid-cols-1 md:grid-cols-2 md:col-span-4 lg:grid-cols-3 lg:col-span-4 gap-2 lg:gap-4 md:gap-3 mt-10 mx-auto">
+                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded  lg:mb-2 math-card bg-cyan-300 ">
                     <div class="w-full">
                         <img src="./images/triangle.png" alt="" class="w-full">
                     </div>
@@ -72,7 +72,7 @@
                     <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded"
                         id="calculate-triangle-area">Calculate</button>
                 </div>
-                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded lg:mb-2  math-card">
+                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded lg:mb-2  math-card bg-cyan-300">
                     <div class="w-full">
                         <img src="./images/rectangle.png" alt="" class="w-full">
                     </div>
@@ -114,7 +114,7 @@
                     <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded"
                         id="rect-area-total-btn">Calculate</button>
                 </div>
-                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded lg:mb-2 math-card ">
+                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded lg:mb-2 math-card bg-cyan-300 ">
                     <div class="w-full">
                         <img src="./images/parallelogram.png" alt="" class="w-full">
                     </div>
@@ -156,7 +156,7 @@
                     <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded"
                         id="calculate-parallelogram-area">Calculate</button>
                 </div>
-                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card">
+                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card bg-cyan-300">
                     <div class="w-full">
                         <img src="./images/rhombus.png" alt="" class="w-full">
                     </div>
@@ -202,7 +202,7 @@
                     <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded"
                         id="rhombus-calculate-area-btn">Calculate</button>
                 </div>
-                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card">
+                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card bg-cyan-300">
                     <div class="w-full">
                         <img src="./images/pentagon.png" alt="" class="w-full">
                     </div>
@@ -243,7 +243,7 @@
                     </div>
                     <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded" id="pentagon-calculate-area-btn">Calculate</button>
                 </div>
-                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card ">
+                <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card  bg-cyan-300">
                     <div class="w-full">
                         <img src="./images/ellipse.png" alt="" class="w-full">
                     </div>
@@ -288,9 +288,10 @@
                 </div>
 
             </div>
-            <div class="md:col-span-2 lg:col-span-2 mt-10 ">
+            <div class="md:col-span-2 lg:col-span-2 mt-10 text-white ">
                 <h2 class="text-center underline font-semibold text-xl">Area Calculation</h2>
-                <table>
+                <table class="text-white
+                ">
                     <tbody id="area-calculator-container">
 
 
@@ -300,6 +301,7 @@
         </section>
     </main>
     <!-- project's js files -->
+    <script src="./js/blog.js"></script>
     <script src="./js/color-genarator.js"></script>
     <script src="./js/library.js"></script>
     <script src="./js/triagle.js"></script>

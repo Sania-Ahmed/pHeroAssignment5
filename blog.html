@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">
+    <header class=" w-full md:w-[95%] md:mx-auto  lg:w-[95%] lg:mx-auto rounded bg-blue-500 text-center shadow-xl shadow-blue-700 mt-4 py-2">
+        <h1 class="font-bold text-2xl text-blue-900 w-full ">Welcome to Blogs</h1>
+    </header>
+<!-- answering the questions -->
+    <main class="mt-14 flex flex-col gap-1 md:p-3">
+  <!-- question one -->
+<section class=" w-full md:w-full lg:w-[95%] lg:mx-auto p-4 rounded bg-red-300 mb-10 ">
+    <div class="w-full p-4 font-bold text-xl bg-red-400 rounded mb-6">
+        <h1>what is DOM ? And what is the purpose of DOM ?</h1>
+    </div>
+    <div class="w-full p-4 font-bold text-xl bg-red-500  rounded">
+        <h1>
+        DOM stands for ducument object model . DOM is used to increase interactivity between user and the website. and it allows  programs and scripts to dynamically access and update the content, structure, and style of a document.
+    </h1>
+    </div>
+</section>
+  <!-- question two -->
+<section class="lg:w-[95%] lg:mx-auto  rounded bg-green-300 mb-10">
+    <div class="w-full  font-bold text-xl bg-green-400 rounded mb-6 p-3 ">
+        <h1 class="p-2">How to select HTML Elements using DOM ? what are the names of DOM method ?</h1>
+    </div>
+    <div class="w-full  font-bold text-xl bg-green-500  rounded">
+        <h1 class=" p-2 w-full text-sm lg:text-lg md:text-lg "> Using DOM it is possible to get access to HTML elements.Those methods are given below--<br>document.getElementById('IdName') > get access to the element by Id name.basically used to get one specific element.<br>document.getElementsByClass('ClassName') > get access to the element by class name . <br>document.getElementsByTagName('TagName') > get access to the element by tag name . <br> document.querySelector('#Idname/ .ClassName / TagName') > get access to the element by tag name or class name or Id name . <br>
+        document.querySelectorAll(' .ClassName / TagName') > get access to the element by tag name or class name. it returns a nodelist which can be used to get access to each elemnts with similar class.
+    </h1>
+    </div>
+</section>
+  <!-- question three -->
+<section class=" w-full md:w-full lg:w-[95%] lg:mx-auto p-4 rounded bg-yellow-300 mb-10 ">
+    <div class="w-full p-4 font-bold text-xl bg-yellow-400 rounded mb-6">
+        <h1>what is event bubble ?</h1>
+    </div>
+    <div class="w-full p-4 font-bold text-xl bg-yellow-500  rounded">
+        <h1>
+        bubble event is a part of DOM . It occurs when an event is given to an element and it also propagate the event to the parent element . to prevent this propagation , developers use stopPropagation() event Method .
+    </h1>
+    </div>
+</section>
+  <!-- question four -->
+<section class=" w-full md:w-full lg:w-[95%] lg:mx-auto p-4 rounded bg-blue-300 mb-10 ">
+    <div class="w-full p-4 font-bold text-xl bg-blue-400 rounded mb-6">
+        <h1>what is callback function ? why is the used ?</h1>
+    </div>
+    <div class="w-full p-4 font-bold text-xl bg-blue-500  rounded">
+        <h1>
+       A callback function is a function which is passed as a parameter to another function , and then it is called in another function to perform perticular activity. And the whole task can be  perfomed sequencely.<br>
+       And it allow a function to  do the task , when the other function is excecuted. hence it prevents code repeatation, common errors and saves time of devs. 
+    </h1>
+    </div>
+</section>
+
+
+
+    </main>
+</body>
+</html>
