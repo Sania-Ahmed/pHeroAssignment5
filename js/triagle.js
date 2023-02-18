@@ -7,10 +7,17 @@ document.getElementById('triangle-check').addEventListener('click', function () 
 })
 
 document.getElementById('calculate-triangle-area').addEventListener('click', function () {
-    const area = calculateArea(0.5, 'first-triangle-value', 'second-triangle-value');
-    displayArea('triangle-title', area);
-    document.getElementById("triangle-check").checked = false;
-    document.getElementById('first-triangle-value').value = '';
-    document.getElementById('second-triangle-value').value = '';
+    const area = calculateArea(0.5, 'first-triangle-case', 'second-triangle-case');
+    if(typeof(area)!== 'undefined' && isNaN(area) === false ){
+        displayArea('triangle-title', area);
+        document.getElementById("triangle-check").checked = false;
+        document.getElementById('first-triangle-value').value = '';
+        document.getElementById('second-triangle-value').value = '';
+    }
+    else{
+        document.getElementById("triangle-check").checked = false;
+        document.getElementById('first-triangle-value').value = '';
+        document.getElementById('second-triangle-value').value = '';
+    }
 
 })

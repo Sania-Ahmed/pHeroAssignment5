@@ -7,10 +7,17 @@ document.getElementById('rect-check').addEventListener('click', function () {
 })
 
 document.getElementById('rect-area-total-btn').addEventListener('click', function () {
-    const area = calculateArea(1, 'first-rectangle-value', 'second-rectangle-value');
-    displayArea('rectangle-title', area);
-    document.getElementById("rect-check").checked = false;
-    document.getElementById('first-rectangle-value').value = '';
-    document.getElementById('second-rectangle-value').value = '';
+    const area = calculateArea(1, 'first-rectangle-case', 'second-rectangle-case');
+    if(typeof(area)!== 'undefined' && isNaN(area) === false ){
+        displayArea('rectangle-title', area);
+        document.getElementById("rect-check").checked = false;
+        document.getElementById('first-rectangle-value').value = '';
+        document.getElementById('second-rectangle-value').value = '';
+    }
+    else{
+        document.getElementById("rect-check").checked = false;
+        document.getElementById('first-rectangle-value').value = '';
+        document.getElementById('second-rectangle-value').value = '';
+    }
 
 })

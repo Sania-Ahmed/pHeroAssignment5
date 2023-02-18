@@ -91,8 +91,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="ract-input-container" class="hidden" >
-                        <div class="flex items-center justify-center w-full " >
+                    <div id="ract-input-container" class="hidden">
+                        <div class="flex items-center justify-center w-full ">
                             <div class="p-1">
                                 <input type="text" name="" class="w-14 border rounded px-1 text-center" placeholder="w"
                                     id="first-rectangle-value">
@@ -120,38 +120,40 @@
                     </div>
                     <div class="text-center mt-3">
                         <div>
-                            <h2 class="font-bold">parallelogram</h2>
+                            <h2 class="font-bold"> <span id="parallelogram-title">parallelogram</span> </h2>
                             <h3 class="font-semibold">Area(A) = b*h</h3>
                         </div>
                         <div class="flex items-center justify-center gap-1 mt-3 mb-2 p-1">
                             <div>
-                                <h4 class="inline-block mr-1">b= 10cm,</h4>
-                                <h4 class="inline-block">h= 12cm</h4>
+                                <h4 class="inline-block mr-1">b= <span id="parallelogram-first-case"> 10</span>cm,</h4>
+                                <h4 class="inline-block">h= <span id="parallelogram-second-case">12</span>cm</h4>
                             </div>
                             <div>
-                                <img src="./images/edit-icon.png" alt="">
+                                <img src="./images/edit-icon.png" alt="" id="parallelogram-edit">
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center justify-center w-full">
-                        <div class="p-1">
-                            <input type="text" name="" id="" class="w-14 border rounded px-1 text-center"
-                                placeholder="b">
+                    <div class="hidden" id="parallelogram-input-container">
+                        <div class="flex items-center justify-center w-full">
+                            <div class="p-1">
+                                <input type="text" name="" id="parallelogram-first-value" class="w-14 border rounded px-1 text-center"
+                                    placeholder="b">
+
+                            </div>
+                            <p class="pr-1">cm</p>
+                            <div>
+                                <input type="text" name="" id="parallelogram-second-value" class="w-14 border rounded px-1 text-center"
+                                    placeholder="h">
+
+                            </div>
+                            <p class="pr-1">cm</p>
+                            <div class="ml-2">
+                                <input type="checkbox" name="" id="parallelogram-check" class="w-5 h-5">
+                            </div>
 
                         </div>
-                        <p class="pr-1">cm</p>
-                        <div>
-                            <input type="text" name="" id="" class="w-14 border rounded px-1 text-center"
-                                placeholder="h">
-
-                        </div>
-                        <p class="pr-1">cm</p>
-                        <div class="ml-2">
-                            <input type="checkbox" name="" id="" class="w-5 h-5">
-                        </div>
-
                     </div>
-                    <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded">Calculate</button>
+                    <button class="bg-sky-400 mt-3 p-2 text-white text-center w-[95%] rounded" id="calculate-parallelogram-area">Calculate</button>
                 </div>
                 <div class="w-full p-4 flex flex-col items-center justify-center shadow-md rounded math-card">
                     <div class="w-full">
@@ -288,6 +290,7 @@
     <script src="./js/library.js"></script>
     <script src="./js/triagle.js"></script>
     <script src="./js/ractangle.js"></script>
+    <script src="./js/parallelogram.js"></script>
 </body>
 
 </html>
